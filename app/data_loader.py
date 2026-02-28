@@ -1,5 +1,6 @@
 import pandas as pd
 import os
+from feature_engineering import create_features
 
 def load_data():
     data_path = os.path.join(os.path.dirname(__file__),"..","data")
@@ -26,15 +27,22 @@ def load_data():
     df = df.merge(sellers, on="seller_id", how="left")
 
     df["revenue"] = df["price"] + df["freight_value"]
+    # Create engineered features
+    df = create_features(df)
+
 
     #Relevant columns for AI analytics
     df = df[
         [
-        "order_purchase_timestamp",
-        "customer_state",
-        "revenue",
-        "price",
-        "freight_value"
+            "order_purchase_timestamp",
+            "order_year",
+            "order_month",
+            "order_month_name",
+            "delivery_days",
+            "customer_state",
+            "revenue",
+            "price",
+            "freight_value"
         ]
     ]
     return df
