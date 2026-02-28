@@ -30,8 +30,8 @@ st.markdown("### 🚀 Try Example Questions")
 examples = [
     "Top 5 states by revenue",
     "Monthly orders last year",
-    "Avg order by category",
-    "Best selling products"
+    "Average order by category",
+    "Revenue growth by year"
 ]
 
 cols = st.columns(2)
