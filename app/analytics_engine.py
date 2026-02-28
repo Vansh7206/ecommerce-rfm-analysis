@@ -10,12 +10,7 @@ def execute_intent(intent, df):
     sort_order = intent.get("sort_order", "none")
     comparison = intent.get("comparison", "none")
 
-    metric_mapping = {
-        "sales": "revenue",
-        "revenue": "revenue",
-        "price": "price",
-        "freight": "freight_value"
-    }
+    metric_mapping = {"sales": "revenue","revenue": "revenue","price": "price","freight": "freight_value"}
 
     metric = metric_mapping.get(metric.lower(), "revenue")
 
