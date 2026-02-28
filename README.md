@@ -85,21 +85,56 @@ Customers are scored on **Recency**, **Frequency**, and **Monetary** value and g
 
 ---
 
+## 📊 Power BI Dashboard Preview
+
+> Full interactive dashboard built in Power BI covering RFM segmentation, revenue trends, payment methods, and geographic distribution.
+
+![E-Commerce Business Performance Dashboard](media/dashboard_preview.png)
+
+> 💡 To explore the full dashboard, open `powerbi/E_Commerce_RFM.pbix` in Power BI Desktop.
+
+---
+
 ## 🛠 Tech Stack
 
-`Python` · `Pandas` · `NumPy` · `Matplotlib` · `Streamlit` · `SQL`
+`Python` · `Pandas` · `NumPy` · `Matplotlib` · `Streamlit` · `SQL` · `Power BI`
 
 ---
 
 ## 📁 Project Structure
 
 ```
-├── ai_query_engine.py     # Intent parsing
-├── analytics_engine.py    # Aggregation & query execution
-├── ai_explainer.py        # Result narration
-├── app.py                 # Streamlit interface
-├── data/                  # Raw & processed datasets
-└── media/                 # Demo assets
+├── app/
+│   ├── __init__.py
+│   ├── ai_explainer.py          # Result narration & business insights
+│   ├── ai_query_engine.py       # Intent parsing
+│   ├── analytics_engine.py      # Aggregation & query execution
+│   ├── app.py                   # Streamlit interface
+│   ├── data_loader.py           # Data ingestion
+│   ├── feature_engineering.py   # RFM scoring & feature prep
+│   ├── safe_executor.py         # Query safety layer
+│   └── utils.py                 # Helper functions
+├── data/
+│   ├── olist_customers_dataset.csv
+│   ├── olist_order_items_dataset.csv
+│   ├── olist_order_payments_dataset.csv
+│   ├── olist_orders_dataset.csv
+│   ├── olist_products_dataset.csv
+│   ├── olist_sellers_dataset.csv
+│   └── product_category_name_translation.csv
+├── media/
+│   └── Working_video.mp4
+├── notebooks/
+│   ├── Olist_RFM_Customer_Segmentation.ipynb
+│   └── olist_business_performance_analysis.ipynb
+├── powerbi/
+│   └── E_Commerce_RFM.pbix
+├── reports/
+│   └── Project_Report.pdf
+├── .gitignore
+├── LICENSE
+├── README.md
+└── requirements.txt
 ```
 
 ---
