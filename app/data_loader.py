@@ -27,7 +27,7 @@ def load_data():
 
     df["revenue"] = df["price"] + df["freight_value"]
 
-    # Keep only relevant columns for AI analytics
+    #Relevant columns for AI analytics
     df = df[
         [
         "order_purchase_timestamp",
