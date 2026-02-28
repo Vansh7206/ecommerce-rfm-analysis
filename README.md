@@ -8,7 +8,9 @@ An end-to-end Business Intelligence system combining SQL analytics, RFM customer
 
 This project analyzes a large-scale Brazilian e-commerce dataset to surface actionable business intelligence across revenue, operations, customer behavior, and geography. It pairs traditional data analysis with a lightweight AI intent engine to simulate a conversational BI assistant.
 
-**Live Demo:** [▶ Watch Demo](media/Working_video.mp4)  | **Dataset:** [Olist Brazilian E-Commerce](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce)
+**Dataset:** [Olist Brazilian E-Commerce](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce)
+
+https://github.com/user-attachments/assets/55694efa-13f4-4f9e-995c-e7a016221fec
 
 ---
 
