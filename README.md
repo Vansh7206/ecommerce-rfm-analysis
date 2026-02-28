@@ -19,14 +19,14 @@ This project analyzes a large-scale Brazilian e-commerce dataset to:
 ![App Preview](media/Working_video.mp4)
 
 ## 🧠 AI-Powered Analytics Engine   
-The core highlight of this project is the AI query engine.
-- Users can type natural language questions such as:
-a. “Total revenue”
-b. “Revenue by state”
-c. “Top 5 states by revenue”
-d. “Orders by payment type”
-e. “Average order value”
-f. “Revenue by customer segment”
+Users can type natural language questions such as:
+
+a. “Total revenue”      
+b. “Revenue by state”   
+c. “Top 5 states by revenue”    
+d. “Orders by payment type”     
+e. “Average order value”    
+f. “Revenue by customer segment”    
 
 ### How It Works
 1. User Input
