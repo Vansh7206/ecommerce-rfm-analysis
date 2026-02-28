@@ -5,42 +5,26 @@ from analytics_engine import execute_intent
 from ai_explainer import explain_result
 import pandas as pd
 
-# ─────────────────────────────────────────────
 # Page Config
-# ─────────────────────────────────────────────
-st.set_page_config(
-    page_title="AI-Powered E-commerce Analytics",
-    page_icon="🤖",
-    layout="centered"
-)
+st.set_page_config(page_title="AI-Powered E-commerce Analytics",page_icon="🤖",layout="centered")
 
 @st.cache_data
 def get_data():
     return load_data()
-
 df = get_data()
 
-# ─────────────────────────────────────────────
 # Header
-# ─────────────────────────────────────────────
 st.title("📊 AI-Powered E-commerce Analytics")
 st.caption("Ask natural language questions. Get instant data insights.")
 
 st.divider()
 
-# ─────────────────────────────────────────────
 # Query Input Form
-# ─────────────────────────────────────────────
 with st.form("query_form"):
-    user_query = st.text_input(
-        "Ask your question",
-        placeholder="e.g. Top 5 states by revenue"
-    )
+    user_query = st.text_input("Ask your question",placeholder="e.g. Top 5 states by revenue")
     run = st.form_submit_button("Analyze", type="primary")
 
-# ─────────────────────────────────────────────
 # Example Queries Section
-# ─────────────────────────────────────────────
 st.markdown("### 🚀 Try Example Questions")
 
 examples = [
@@ -57,11 +41,8 @@ for i, example in enumerate(examples):
         user_query = example
         run = True
 
-# ─────────────────────────────────────────────
 # Run Query
-# ─────────────────────────────────────────────
 if run:
-
     if not user_query.strip():
         st.warning("Please enter a question.")
         st.stop()
@@ -76,30 +57,22 @@ if run:
 
     st.divider()
 
-    # ── Extracted Intent ─────────────────────
+    #Extracted Intent
     with st.expander("🧠 What the AI Interpreted"):
         st.json(intent)
 
-    # ── Result Section ───────────────────────
+    #Result Section
     st.subheader("📊 Result")
 
     if isinstance(result, (int, float)):
         st.metric("Total Value", f"{result:,.2f}")
 
     elif isinstance(result, pd.Series):
-        st.dataframe(
-            result.reset_index(),
-            use_container_width=True,
-            hide_index=True
-        )
+        st.dataframe(result.reset_index(),use_container_width=True,hide_index=True)
     else:
-        st.dataframe(
-            result,
-            use_container_width=True,
-            hide_index=True
-        )
+        st.dataframe(result,use_container_width=True,hide_index=True)
 
-    # ── Insight Section ──────────────────────
+    #Insight Section
     st.markdown("### 💡 AI Insight")
 
     with st.spinner("Generating insight..."):
