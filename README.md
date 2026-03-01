@@ -91,6 +91,11 @@ Customers are scored on **Recency**, **Frequency**, and **Monetary** value and g
 
 ![E-Commerce Business Performance Dashboard](media/Dashboard1.png)
 ![E-Commerce Business Performance Dashboard](media/Dashboard2.png)
+<p align="center">
+  <img src="media/Dashboard1.png" width="48%" alt="E-Commerce Business Performance Dashboard"/>
+  &nbsp;
+  <img src="media/Dashboard2.png" width="48%" alt="E-Commerce Business Performance Dashboard"/>
+</p>
 
 > 💡 To explore the full dashboard, open `powerbi/E_Commerce_RFM.pbix` in Power BI Desktop.
 
