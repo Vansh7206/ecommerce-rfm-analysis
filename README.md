@@ -124,6 +124,8 @@ Customers are scored on **Recency**, **Frequency**, and **Monetary** value and g
 │   └── product_category_name_translation.csv
 ├── media/
 │   └── Working_video.mp4
+│   └── Dashboard1.png
+│   └── Dashboard2.png
 ├── notebooks/
 │   ├── Olist_RFM_Customer_Segmentation.ipynb
 │   └── olist_business_performance_analysis.ipynb
