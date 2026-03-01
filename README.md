@@ -90,9 +90,9 @@ Customers are scored on **Recency**, **Frequency**, and **Monetary** value and g
 > Full interactive dashboard built in Power BI covering RFM segmentation, revenue trends, payment methods, and geographic distribution.
 
 <p align="center">
-  <img src="media/Dashboard1.png" width="48%" alt="E-Commerce Business Performance Dashboard"/>
-  &nbsp;
-  <img src="media/Dashboard2.png" width="48%" alt="E-Commerce Business Performance Dashboard"/>
+  <img src="media/Dashboard1.png" width="45%" height="300px" alt="E-Commerce Business Performance Dashboard"/>
+  &nbsp;&nbsp;
+  <img src="media/Dashboard2.png" width="45%" height="300px" alt="E-Commerce Business Performance Dashboard"/>
 </p>
 
 > 💡 To explore the full dashboard, open `powerbi/E_Commerce_RFM.pbix` in Power BI Desktop.
