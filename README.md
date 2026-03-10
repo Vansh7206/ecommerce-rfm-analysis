@@ -148,7 +148,7 @@ Customers are scored on **Recency**, **Frequency**, and **Monetary** value and g
 ## 🚀 Getting Started
 
 ```bash
-git clone https://github.com/your-username/your-repo.git
+git clone https://github.com/Vansh7206/ecommerce-rfm-analysis
 cd your-repo
 pip install -r requirements.txt
 streamlit run app.py
